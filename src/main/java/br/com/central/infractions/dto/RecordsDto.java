@@ -20,10 +20,4 @@ public class RecordsDto {
 
     private String vehicleClass;
 
-    public RecordsDto(LocalDateTime dateTime, Integer speed, String plate, String vehicleClass) {
-        this.dateTime = dateTime;
-        this.speed = speed;
-        this.plate = plate;
-        this.vehicleClass = vehicleClass;
-    }
 }
