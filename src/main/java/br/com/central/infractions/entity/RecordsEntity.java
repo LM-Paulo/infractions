@@ -1,6 +1,7 @@
 package br.com.central.infractions.entity;
 
 import br.com.central.infractions.dto.RecordsDto;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import javax.persistence.*;
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
+@Data
 public class RecordsEntity {
 
     @Id

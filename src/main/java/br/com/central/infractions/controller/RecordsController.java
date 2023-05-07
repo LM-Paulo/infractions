@@ -10,8 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.jboss.logging.Logger;
 
-import java.util.UUID;
-
 @RestController
 @RequestMapping("api/records")
 public class RecordsController {

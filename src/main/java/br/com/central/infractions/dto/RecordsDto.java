@@ -4,13 +4,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
+
 
 @Getter
 @Setter
 public class RecordsDto {
 
-    private UUID id;
+    private Long id;
 
     private LocalDateTime dateTime;
 
@@ -20,5 +20,10 @@ public class RecordsDto {
 
     private String vehicleClass;
 
-
+    public RecordsDto(LocalDateTime dateTime, Integer speed, String plate, String vehicleClass) {
+        this.dateTime = dateTime;
+        this.speed = speed;
+        this.plate = plate;
+        this.vehicleClass = vehicleClass;
+    }
 }
