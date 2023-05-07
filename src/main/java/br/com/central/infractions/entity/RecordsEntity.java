@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Data
+@Table(name  = "t_records")
 public class RecordsEntity {
 
     @Id
