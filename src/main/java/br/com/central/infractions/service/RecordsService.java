@@ -45,8 +45,9 @@ public class RecordsService {
     }
 
     @Transactional
-    public void updateRecord(RecordsDto recordsDto){
-        RecordsEntity recordsEntity = new RecordsEntity();
+    public void updateRecord(Long id, RecordsDto recordsDto){
+        Optional<RecordsEntity> findRecord = recordsRepository.findById(id);
+        RecordsEntity recordsEntity = findRecord.get();
         recordsEntity.SetEntity(recordsDto);
         recordsRepository.save(recordsEntity);
     }

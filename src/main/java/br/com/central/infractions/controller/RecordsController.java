@@ -22,9 +22,9 @@ public class RecordsController {
         return ResponseEntity.ok("Record created successfully");
     }
 
-    @PostMapping("/update-records")
-    public ResponseEntity<?> updateRecord(@RequestBody RecordsDto records){
-        recordsService.updateRecord(records);
+    @PostMapping("/update-records/{id}")
+    public ResponseEntity<?> updateRecord(@PathVariable("id") Long id,@RequestBody RecordsDto records){
+        recordsService.updateRecord(id,records);
         return ResponseEntity.ok("Records updated successfully");
     }
 
